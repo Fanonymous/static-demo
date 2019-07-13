@@ -1,0 +1,99 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+	<head>
+		<title>酒仙商城</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="style.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+	#total{
+		color: red;
+		font-weight: bold;
+		font-size: large;
+	}
+	#credit{
+		color: red;
+		font-weight: bold;
+		font-size: large;
+	}
+</style>	
+		
+
+	</head>
+
+	<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+		<iframe src="top.htm" frameborder="0" marginheight="0" marginwidth="0" width="770" height="130" scrolling="no"></iframe>
+		<table width="100%" border="0" cellpadding="0" cellspacing="0" class="yrh">
+			<tr>
+				<td height="17"><a href="home.htm">主页</a> &raquo;确认订单</td>
+			</tr>
+		</table>
+		<table width="770" border="0" cellpadding="0" cellspacing="0" class="main">
+			<tr valign="top">
+				<td>
+					<form action="" enctype="multipart/form-data" name="form1">
+						<table width="100%" border="0" cellpadding="2" cellspacing="1" class="inputTable">
+							<tr>
+								<td class="inputTitle">商品清单</td>
+							</tr>
+							<tr>
+								<td class="inputHeader">
+									<table width="100%" border="0" cellpadding="0" cellspacing="0" class="inputbox" id="tables">
+										<tr>
+											<td width="20%" align="center" class="titlegrey">商品名</td>
+											<td width="20%" align="center" class="titlegrey">市场价</td>
+											<td width="10%" align="center" class="titlegrey">会员价</td>
+											<td width="9%" align="center" class="titlegrey">数量</td>
+										</tr>
+									</table>
+
+								</td>
+							</tr>
+						</table>
+						
+								<table width="100%" border="0" cellpadding="2" cellspacing="1" class="inputTable">
+									<tr>
+										<td width="20%" align="right">总价：</td>
+										<td width="20%"><span id="total"></span>￥</td>
+									</tr>
+									<tr>
+										<td width="20%" align="right">本单将产生积分：</td>
+										<td width="20%"><span id="credit"></span>(每消费100￥，获得1积分)</td>
+									</tr>
+								</table>
+					<table width="100%" border="0" cellpadding="2" cellspacing="1" class="inputTable">
+						<tr>
+							<td class="inputTitle">送货地址</td>
+						</tr>
+						<tr>
+							<td width="10%" align="right">姓名：</td>
+							<td width="20%" align="left"><input type="text" size="40" id="name" placeholder="真实姓名"></td>
+						</tr>
+						<tr>
+							<td width="10%" align="right">地址：</td>
+							<td width="20%" align="left"><input type="text" size="40" id="address" placeholder="陕西省西安市雁塔区锦业路软件外包学院"></td>
+						</tr>
+						<tr>
+							<td width="10%" align="right">电话号码：</td>
+							<td width="20%" align="left"><input type="text" size="40" id="phone" placeholder="138********s"></td>
+						</tr>
+						<tr>
+							<td width="10%" align="right">支付方式：</td>
+							<td width="20%" align="left"><input type="text" size="40" id="pay" placeholder="货到付款/网上支付"></td>
+						</tr>
+						<tr>
+							<td width="20%" height="30px" align="right">请仔细核查信息，确定无误后：</td>
+							<td><button onclick="checkForm()">提交订单</button></td>
+						</tr>
+					</table>
+					</form>
+				</td>
+			</tr>
+
+		</table>
+
+		<iframe src="bottom.htm" frameborder="0" marginheight="0" marginwidth="0" width="770" height="130" scrolling="no"></iframe>
+<script language="javascript" src="../js/count.js"></script>
+	</body>
+
+</html>
